@@ -1,0 +1,9 @@
+/****************************/
+/* Overriden zenburn styles */
+/****************************/
+/* inline code */
+.reveal p code,
+.reveal li code {
+    color: darkred;
+    background: transparent;
+}

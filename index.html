@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>Reveal.js fullscreen code plugin live demo</title>
+        <meta name="description" content="">
+        <meta name="author" content="Michael Kordulewski">
+
+        <link rel="stylesheet" href="css/import/black.css">
+        <link rel="stylesheet" href="plugin/reveal.js-fullscreen-code/reveal.js-fullscreen-code.css">
+        <link rel="alternate stylesheet" type="text/css"   media="screen,projection,print"  href="css/import/beige.css"     title="Beige">
+        <link rel="alternate stylesheet" type="text/css"   media="screen,projection,print"  href="css/import/black.css"     title="Black">
+        <link rel="alternate stylesheet" type="text/css"   media="screen,projection,print"  href="css/import/blood.css"     title="Blood">
+        <link rel="alternate stylesheet" type="text/css"   media="screen,projection,print"  href="css/import/league.css"    title="League">
+        <link rel="alternate stylesheet" type="text/css"   media="screen,projection,print"  href="css/import/moon.css"      title="Moon">
+        <link rel="alternate stylesheet" type="text/css"   media="screen,projection,print"  href="css/import/night.css"     title="Night">
+        <link rel="alternate stylesheet" type="text/css"   media="screen,projection,print"  href="css/import/serif.css"     title="Serif">
+        <link rel="alternate stylesheet" type="text/css"   media="screen,projection,print"  href="css/import/simple.css"    title="Simple">
+        <link rel="alternate stylesheet" type="text/css"   media="screen,projection,print"  href="css/import/sky.css"       title="Sky">
+        <link rel="alternate stylesheet" type="text/css"   media="screen,projection,print"  href="css/import/solarized.css" title="Solarized">
+        <link rel="alternate stylesheet" type="text/css"   media="screen,projection,print"  href="css/import/white.css"     title="White">
+
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+    </head>
+    <body>
+    <div class="reveal">
+        <div class="slides">
+
+            <section>
+                <h1>Reveal.js fullscreen code plugin</h1>
+                <h4 class="blue">live demo</h4>
+                <br /><br />
+                <img src="resources/reveal.js-logo.png" height="100" />
+                <p><span style="font-size:16px">Michael Kordulewski</span></p>
+            </section>
+
+            <section data-markdown="code.md"
+                     data-separator="^\n\n"
+                     data-separator-vertical="^\n\n\n"
+                     data-separator-notes="<!-- aside -->"
+                     data-charset="utf-8">
+            </section>
+
+        </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+        Reveal.initialize({
+            width: '100%',
+            height: '100%',
+            history: true,
+            slideNumber: true,
+            mouseWheel: false,
+            dependencies: [
+                { src: 'plugin/markdown/marked.js' },
+                { src: 'plugin/markdown/markdown.js' },
+                { src: 'plugin/notes/notes.js', async: true },
+                { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                { src: 'plugin/reveal.js-fullscreen-code/jquery-3.1.1.min.js' },
+                { src: 'plugin/reveal.js-fullscreen-code/reveal.js-fullscreen-code.js' }
+            ]
+        });
+    </script>
+    </body>
+</html>

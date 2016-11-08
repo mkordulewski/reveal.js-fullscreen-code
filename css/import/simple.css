@@ -1,0 +1,12 @@
+/* GENERAL */
+@import url(../../css/reveal.css);
+
+/* THEME */
+@import url(../theme/simple.css);
+
+/* CUSTOM */
+@import url(../../css/custom.css);
+@import url(../custom/simple.css);
+
+/* ZENBURN */
+@import url(../../lib/css/zenburn.css);
